@@ -9,7 +9,7 @@ export const Info = () => {
 	for (let i = 0; i < tipos.length; i++) {
 		let prueba = tipos[i].find(arr => arr.name === params.name);
 		if (prueba != undefined) {
-			let individuo = prueba;
+			let objeto = prueba;
 
 			return (
 				<div className="divInfo container mb-2 align-self-center">
@@ -22,12 +22,12 @@ export const Info = () => {
 						<div className="col-lg-6 col-12 align-content-center">
 							<img
 								className="col-12 card-img-topInfo "
-								src="https://images.mediotiempo.com/Q3JLKOwPAZjcdK-6u406n-REY-g=/958x596/uploads/media/2020/02/19/star-wars-franquicias-cine-ciencia.jpg"
+								src="https://th.bing.com/th/id/OIF.BumZfIAOocJaTX1vxLjWow?pid=ImgDet&rs=1"
 								alt="imagen"
 							/>
 						</div>
 						<div className="col-lg-6 col-12" id="texto">
-							<h1 className="text-center">{individuo.name}</h1>
+							<h1 className="text-center">{objeto.name}</h1>
 							<span>
 								Star Wars is a multi-genre mythology and multimedia franchise created by George Lucas in
 								1976. Comprising movies, novels, comics, video games, toys, and numerous television
@@ -48,36 +48,36 @@ export const Info = () => {
 						</div>
 					</div>
 
-					{individuo.climate != undefined ? (
+					{objeto.climate != undefined ? (
 						<div className="flex-wrap d-flex flex-row justify-content-around" id="propiedades">
 							<div className="detalleInfo m-2">
 								<span>
-									Population: <br /> {individuo.population}
+									Population: <br /> {objeto.population}
 								</span>
 							</div>
 							<div className="detalleInfo m-2">
 								<span>
-									Terrain: <br /> {individuo.terrain}
+									Terrain: <br /> {objeto.terrain}
 								</span>
 							</div>
 							<div className="detalleInfo m-2">
 								<span>
-									Diameter: <br /> {individuo.diameter}
+									Diameter: <br /> {objeto.diameter}
 								</span>
 							</div>
 							<div className="detalleInfo m-2">
 								<span>
-									Rotation period: <br /> {individuo.rotation_period}
+									Rotation period: <br /> {objeto.rotation_period}
 								</span>
 							</div>
 							<div className="detalleInfo m-2 ">
 								<span>
-									Orbital period: <br /> {individuo.orbital_period}
+									Orbital period: <br /> {objeto.orbital_period}
 								</span>
 							</div>
 							<div className="detalleInfo m-2">
 								<span>
-									Gravity: <br /> {individuo.gravity}
+									Gravity: <br /> {objeto.gravity}
 								</span>
 							</div>
 						</div>
@@ -85,32 +85,32 @@ export const Info = () => {
 						<div className="flex-wrap d-flex flex-row justify-content-around" id="propiedades">
 							<div className="detalleInfo m-2">
 								<span>
-									Height: <br /> {individuo.height}
+									Height: <br /> {objeto.height}
 								</span>
 							</div>
 							<div className="detalleInfo m-2">
 								<span>
-									Mass: <br /> {individuo.mass}
+									Mass: <br /> {objeto.mass}
 								</span>
 							</div>
 							<div className="detalleInfo m-2">
 								<span>
-									Hair color: <br /> {individuo.hair_color}
+									Hair color: <br /> {objeto.hair_color}
 								</span>
 							</div>
 							<div className="detalleInfo m-2">
 								<span>
-									Skin color: <br /> {individuo.skin_color}
+									Skin color: <br /> {objeto.skin_color}
 								</span>
 							</div>
 							<div className="detalleInfo m-2">
 								<span>
-									Eye color: <br /> {individuo.eye_color}
+									Eye color: <br /> {objeto.eye_color}
 								</span>
 							</div>
 							<div className="detalleInfo m-2">
 								<span>
-									Birth year: <br /> {individuo.birth_year}
+									Birth year: <br /> {objeto.birth_year}
 								</span>
 							</div>
 						</div>
